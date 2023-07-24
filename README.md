@@ -10,11 +10,8 @@
 
 ### **Clone repository**
 
-    $ git clone https://github.com/Xuehong-pdx/stock_checker
-
-* Navigate to the project folder
-
-      $ cd stock_checker/app
+  $ cd stock_checker
+  $ git clone https://github.com/Xuehong-pdx/stock_checker
 
 * Build Docker container
 
