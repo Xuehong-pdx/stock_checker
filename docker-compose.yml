@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  dash:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dash_dash
+    command: python get_stock.py
+    volumes:
+      - .:/stock_checker
+    ports:
+      - "8050:8050"
