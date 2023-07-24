@@ -11,6 +11,7 @@
 ### **Clone repository**
 
   $ cd stock_checker
+  
   $ git clone https://github.com/Xuehong-pdx/stock_checker
 
 * Build Docker container
