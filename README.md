@@ -18,10 +18,10 @@
 
 * Build Docker container
 
-      $ docker build -t stock_checker .
+      $ docker-compose build
 
 * Run container
 
-      $  docker run -itp 8050:8050 stock_checker  
+      $  docker-compose up  
 
 View page at http://localhost:8050/
