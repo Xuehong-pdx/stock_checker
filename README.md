@@ -14,6 +14,8 @@
   
     $ git clone https://github.com/Xuehong-pdx/stock_checker
 
+### **Build and run container**
+
 * Build Docker container
 
       $ docker-compose build
