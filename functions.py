@@ -3,26 +3,27 @@ import pandas as pd
 from datetime import datetime
 import pytz
 
+
 def check_symbol(symbol):
     ticker = yf.Ticker(symbol)
     if ticker:
         return True
     else:
         print(f'{symbol.upper()} is not a valid symbol.')
-        
+
+
 def get_ticker_info(ticker):
     t = yf.Ticker(ticker)
     # df = t.history('max')
     # df = df.reset_index()
-    if t:
+    try:
         close_price = round(t.info['previousClose'], 2) 
         open_price = round(t.info['regularMarketOpen'], 2) 
         high = round(t.info['regularMarketDayHigh'], 2) 
         low = round(t.info['regularMarketDayLow'], 2) 
-    else:
-        print(f'No info found for ticker {t}')
-
-    return ticker, close_price, open_price, high, low 
+        return ticker, close_price, open_price, high, low
+    except:
+        return None, None, None, None, None
 
 
 def get_stocks(symbols, timezone='America/Denver'):
@@ -31,7 +32,8 @@ def get_stocks(symbols, timezone='America/Denver'):
         ticker = symbol.upper().strip()
         if check_symbol(ticker) == True:
             ticker, close_price, open_price, high, low = get_ticker_info(ticker)
-            stock_values.append([ticker, close_price, open_price, high, low, low-close_price])
+            if ticker and close_price and open_price and high and low:
+                stock_values.append([ticker, close_price, open_price, high, low, low-close_price])
 
     if not stock_values:
         return None, None
@@ -42,6 +44,7 @@ def get_stocks(symbols, timezone='America/Denver'):
     timezone = pytz.timezone(timezone)
 
     return df, datetime.now(timezone)
+
 
 def check_stocks(timezone='America/Denver'):
     '''
