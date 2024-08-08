@@ -1,6 +1,6 @@
 # stock checker
 
-  This is a simple for checking selected stocks using a Dash interface.  Results contains information on previous closing value, current opening value, today's high and today's low for each selected stock. 
+  This is a simple app for checking selected stocks using a Dash interface.  Results contains information on previous closing value, current opening value, today's high and today's low for each selected stock. 
   
 ## **Built with:**
 
