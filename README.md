@@ -14,7 +14,7 @@
     
 ### **Clone repository**
 
-    $ cd stock_checker
+    $ cd parent_dir
   
     $ git clone https://github.com/Xuehong-pdx/stock_checker
 
