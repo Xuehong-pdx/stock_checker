@@ -4,7 +4,7 @@
   
 ## **Built with:**
 
-* [![Python](https://img.shields.io/badge/python-3.10.6-blue.svg)](https://www.python.org/downloads/release/python-3106/)
+* [![Python](https://img.shields.io/badge/python-3.13.0-blue.svg)]([https://www.python.org/downloads/release/python-3106/](https://www.python.org/downloads/release/python-3130/))
 
 ## **Getting Started**
 
