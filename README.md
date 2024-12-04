@@ -4,7 +4,8 @@
   
 ## **Built with:**
 
-* [![Python](https://img.shields.io/badge/python-3.13.0-blue.svg)]([https://www.python.org/downloads/release/python-3106/](https://www.python.org/downloads/release/python-3130/))
+* [![Python](https://img.shields.io/badge/python-3.10.6-blue.svg)](https://www.python.org/downloads/release/python-3106/)
+* [![Dash](https://img.shields.io/badge/Dash-blue.svg)](https://dash.plotly.com/)
 
 ## **Getting Started**
 
@@ -14,7 +15,7 @@
     
 ### **Clone repository**
 
-    $ cd parent_dir
+    $ cd stock_checker
   
     $ git clone https://github.com/Xuehong-pdx/stock_checker
 
@@ -22,10 +23,10 @@
 
 * Build Docker container
 
-      $ docker-compose build
+      $ docker-compose build 
 
 * Run container
 
-      $  docker-compose up  
+      $  docker-compose up --remove-orphans
 
-View page at http://localhost:8050/
+View page at http://localhost:8050
